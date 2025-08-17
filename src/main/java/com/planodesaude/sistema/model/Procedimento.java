@@ -32,8 +32,9 @@ public class Procedimento {
     @Column(nullable = false)
     private BigDecimal preco;
 
-    @Column(nullable = false)
-    private Integer diasCarencia; // Quantos dias após inclusão pode realizar
+    @Column(name = "dias_carencia", nullable = false)
+    private Integer diasCarencia;
+
 
     @Column(nullable = false)
     private Integer quantidadeMaxima; // Máximo permitido no período
